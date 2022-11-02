@@ -8,7 +8,6 @@ def index():
     if request.method == 'POST':
         submitter = request.form['submitter']
         fact = request.form['fact']
-
         new_fact = models.Fact(submitter=submitter, fact=fact) 
         models.db.session.add(new_fact)
         models.db.session.commit()

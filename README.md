@@ -19,15 +19,23 @@ They just want us to create a proof of concept so let's use this opportunity and
 
 1. With our virtual environment set up, we can now install the Flask package with pip.
 
-**What your terminal commands should look like:**
-
 ```powershell
 pip install Flask
 ```
-## Activity: Static Files and Styling
-![GIF](static-files-and-styling-Activity.gif)
+## Installing Flask-SQLAlchemy
 
-## Acceptance Criteria
-- When running your app with `flask run --reload`, there should be no errors displayed on the browser.
-- When visiting a `/pets/<index>` show page endpoint, the page should display a pet's name, image, and a fun fact.
-- When visiting the `/facts/new` endpoint, the page should display a form for submitting a fun fact.
+```powershell
+pip install flask_sqlalchemy
+```
+
+1. Install the package through pip. Note that its package name is capitalized and hyphenated as `Flask-Migrate` during installation.
+2. We also have to install a Postgres database adapter, `psycopg2-binary`.
+   - This package will allow our Python application to work with Postgres.
+
+```powershell
+pip install Flask-Migrate
+pip install psycopg2-binary
+```
+
+## Activity: Static Files and Styling and  Interacting with the PetFax Database
+![GIF](screen-recording.gif)
